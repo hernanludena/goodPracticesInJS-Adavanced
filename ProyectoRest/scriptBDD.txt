@@ -1,0 +1,20 @@
+-- Table: restaurantes
+
+-- DROP TABLE restaurantes;
+
+CREATE TABLE restaurantes
+(
+  codigo serial NOT NULL,
+  nombre character varying,
+  telefono character varying,
+  CONSTRAINT pk_restaurante PRIMARY KEY (codigo)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE restaurantes
+  OWNER TO postgres;
+
+
+
+rest/restauranteService/recuperarTodos

@@ -1,0 +1,18 @@
+ <datasource jta="false" jndi-name="java:/bancoDS" pool-name="banco" 
+enabled="true" use-ccm="false">
+                   
+ <connection-url>jdbc:postgresql://localhost:5432/banco</connection-url>
+ 
+                   <driver-class>org.postgresql.Driver</driver-class>
+  
+                  <driver>postgresql-9.1-902.jdbc4.jar</driver>
+  
+                  <security>
+                       
+ <user-name>postgres</user-name>
+                      
+  <password>root</password>
+                    
+</security>
+                
+</datasource>

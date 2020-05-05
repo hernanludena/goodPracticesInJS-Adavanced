@@ -1,0 +1,14 @@
+{"cedula":"0919643072","nombre":"Sergio Enrique","apellido":"Hidalgo Vélez","genero":"Masculino"}
+{"codigo":"18","nombre":"Frenos ABC","precioVenta":125.23,"impuesto":true,"idCategoria":5}
+{"codigo":"4","fecha":"06/13/2014 17:41","total":125.23,"cedulaCliente":"2345678901"}
+{"codigo":"7","fecha":"06/13/2014 17:41","total":689.48,"cedulaCliente":"2345678901","lstFacturaDetalle":[{"codigoProducto":"1234","cantidad":20},{"codigoProducto":"1111","cantidad":30}]}
+
+{"fechaPrestamo":"06/16/2014 16:24","idCliente":"2500","montoTotal":6089.48,"detallesPrestamoDTO":[{"numeroPago":24,"totalCuota":250,"capitalCuota":25000,"interesCuota":2.50,"fechaPago":"06/30/2014 16:24","fechaCuotaPagada":"06/17/2014 16:24","estadoCuota":1}]}
+
+
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><persona><apellido>Hidalgo Vélez</apellido><cedula>0919643072</cedula><nombre>Sergio Enrique</nombre></persona>
+
+
+Crear metodo que se llame buscarCategoria, retorna una categorias con formato JSON recibe el codigo de categoria para retornar
+un registro, recibe el codigo como QueryParam

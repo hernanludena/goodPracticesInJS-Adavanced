@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <title>DOM</title>
+        <script type="text/javascript" type="text/javascript" src="ejercicio8.js">            
+        </script>
+    </head>
+    <body>
+        <form name="ClienteForm">
+            <h1>Cliente</h1>
+            <label>cedula</label><input type="text" name="cedula" /> <br>
+            <label>nombre</label><input type="text" name="nombre" /> <br>
+            <label>apellido</label><input type="text" name="apellido" /> <br>
+            <h1>Dirección</h1>
+            <label>calle principal</label><input type="text" name="callePrincipal" /> <br>
+            <label>calle secundaria</label><input type="text" name="calleSecundaria" /> <br>
+            <label>numero</label><input type="text" name="numero" /> <br>
+            <h1>Telefonos</h1>
+            <label>numero</label><input type="text" name="numeroTelefono" />
+            <label>tipo</label>                
+            <select name="tipo">
+                    <option>Fijo</option>
+                    <option>Movil</option>
+            </select>
+            <label>operadora</label>
+            <select name="operadora">
+                    <option>Movistar</option>
+                    <option>Claro</option>
+                    <option>CNT</option>
+            </select>
+            <input type="button" value="Agregar Telefono" onclick="agregarTelefono()" /><br>
+            <input type="button" value="Agregar" onclick="agregar()" />
+            <input type="button" value="Mostrar" onclick="mostrar()" /><br>
+            <textarea name="lista" ></textarea>
+            <table id="lista" name="lista" cellpadding="2" cellspacing="2" border="1"></table>
+            <table id="listaTelefonos" name="listaTelefonos" cellpadding="2" cellspacing="2" border="1"></table>
+            <table id="listaDirecciones" name="listaDirecciones" cellpadding="2" cellspacing="2" border="1"></table>
+            <div id="div_genero">
+                Genero:
+                <select id="sel_genero">
+                    <option>Masculino</option>
+                    <option>Femenino</option>
+                </select>
+            </div>    
+        </form>
+        
+    </body>
+</html>

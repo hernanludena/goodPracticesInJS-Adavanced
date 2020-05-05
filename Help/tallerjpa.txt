@@ -1,0 +1,13 @@
+* la creación de objetos(ejm: ClienteServicio) la maneja el contenedor
+* la creación del EntityManager lo hace el contenedor mediante inyección de código @PersistenceContext
+* para Jboss se copia el .jar de la base de datos y los .war (son lo mismo que los .jar pero para web service) en la
+  carpeta deployments
+* la columna de una clave foránea no se mapea directamente con @Column
+
+* fetch type EAGER (patético) LAZY (más pepa)
+
+* ERROR:  unsaved transient instance
+* El em.merge(identity) inserta el registro si no lo encuentra
+* Antes de usar em.remove(identity) se debe poner el registro en el persistence context
+  por lo tanto se debe realizar una busqueda primero para se inserte en el persistence 
+  context

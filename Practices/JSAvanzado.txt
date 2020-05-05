@@ -1,0 +1,24 @@
+http://localhost:8080/ProyectoRestaurante/rest/restauranteService/recuperarTodos
+http://localhost:8080/ProyectoRestaurante/rest/restauranteService/insertar
+
+http://localhost:8080/ClienteRestaurante/ejercicio13.html
+
+{"nombre":"Multi","telefono":"323434"}  json
+
+
+http://localhost:8080/JPA_Factura/rest1/categoria/recuperar  
+http://localhost:8080/JPA_Factura/rest1/categoria/insertar   {"nombre":"Casas"}  //JSON
+http://localhost:8080/JPA_Factura/rest1/factura/buscar?codigo=34
+
+[{"id":2,"nombre":"CONSERVAS"},{"id":3,"nombre":"LACTEOS"},{"id":1,"nombre":"VERDURITAS"},{"id":5,"nombre":"Articulo"},{"id":6,"nombre":"PINTURA"}]
+
+
+--acciones de httprequest-- (nivel del cliente)
+PUT: insert
+POST: update
+GET: Consultas  //no puedo enviar Objetos
+DELETE: delete
+
+
+
+http://localhost:8083/Rest_Introduccion/rest/ServicioBienvenida

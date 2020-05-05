@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Ejemplo de codigo JavaScript en el propio documento</title>
+    <script type="text/javascript" src="ejercicio11.js"></script>
+</head>
+
+<body>
+    <form name="p">
+        <br>Cedula:
+        <input type="text" name="cedula" />
+        <br>Nombre
+        <input type="text" name="nombreCliente" />
+        <br>Apellido
+        <input type="text" name="apellido" />
+        <h1>Dirección</h1>
+        <br>CallePrincipal
+        <input type="text" name="callePrincipal" />
+        <br>Calle Secundaria
+        <input type="text" name="calleSecundaria" />
+        <br>Número
+        <input type="text" name="numero" />
+        <br>Genero
+        <div id="div_genero">
+            <select id="sel_genero">
+                <option>Masculino</option>
+                <option>Femenino</option>
+            </select>
+        </div>
+        <input type="button" value="agregar" onclick="agregar()" />
+        
+        <h1>Teléfonos</h1>
+        <br>Número
+        <input type="text" name="numero_tel" />
+        <br>
+        <br>
+        <div id="div_tipo_tel">
+            Tipo de Teléfono:
+            <select id="sel_tipo_tel">   
+                <option>Fijo</option>
+                <option>Movil</option>
+            </select>
+        </div>
+        <br>
+        <div id="div_operadoras">
+            Operadora:
+            <select id="sel_operadora">
+                <option>Movistar</option>
+                <option>Claro</option>
+                <option>CNT</option>
+            </select>
+        </div>
+        <input type="button" value="agregarTelefono" onclick="agregarTelefono()" />
+        
+        
+        <h1>Clientes:</h1>
+        <table id="myTable" cellpadding="2" cellspacing="2" border="1"></table>
+        <br>
+        <textarea name="clientesTxtArea" rows="10" cols="50"></textarea>
+        
+        
+    </form>
+</body>
+
+</html>
+
+
+

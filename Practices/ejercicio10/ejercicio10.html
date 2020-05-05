@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=iso-8859-1"/>
+       <title>Ejemplo de codigo JavaScript en el propio documento</title> 
+        <script type="text/javascript" src="ejercicio10.js"></script>
+    </head>
+    
+    <body>
+      <form name = "p"> 
+          
+          <br><h1>Datos Personales</h1>
+        <br>Cedula: 
+        <input type="text" name="cedula"/>
+        <br>Nombre: 
+        <input type="text" name="nombre"/>
+        <br>Apellido:
+        <input type="text" name="apellido"/>
+          
+          <br><h1>Direccion</h1>
+          <br>Calle Primaria: 
+        <input type="text" name="calleP"/>
+        <br>Calle Secundaria: 
+        <input type="text" name="calleS"/>
+        <br>Numero:
+        <input type="number" name="numero"/>
+            
+           <div id="div_genero">
+              <h4>Genero:</h4>  
+              <select id="sel_genero">
+                  <option>Masculino</option>
+                  <option>Femenino</option>              
+              </select>          
+          </div>
+        
+          <br>
+         <input type="button" value="Agregar" onclick="agregar()"/>          
+          
+          <br>          
+           <br><h1>Clientes:</h1>
+          <br>
+          <textarea name="clientes"></textarea>
+          <br>
+          <input type="button" value="Mostrar" onclick="mostrar()"/> 
+          
+        </form>    
+    </body>
+</html>
+    
+ 
+

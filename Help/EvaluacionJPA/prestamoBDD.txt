@@ -1,0 +1,36 @@
+CREATE TABLE prestamo
+(
+  id_prestamo serial NOT NULL,
+  fecha_prestamo date,
+  id_cliente character varying,
+  monto_total numeric(8,2),
+  CONSTRAINT pk_prestamo PRIMARY KEY (id_prestamo )
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE prestamo
+  OWNER TO postgres;
+
+
+CREATE TABLE detalle_prestamo
+(
+  id_det_prestamo serial NOT NULL,
+  numero_pago integer,
+  total_cuota numeric(8,2),
+  capital_cuota numeric(8,2),
+  interes_cuota numeric(8,2),
+  fecha_pago date,
+  fecha_cuota_pagada date,
+  estado_cuota integer,
+  id_prestamo integer,
+  CONSTRAINT pk_det_prestamo PRIMARY KEY (id_det_prestamo ),
+  CONSTRAINT fk_prestamo FOREIGN KEY (id_prestamo)
+      REFERENCES prestamo (id_prestamo) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE detalle_prestamo
+  OWNER TO postgres;
